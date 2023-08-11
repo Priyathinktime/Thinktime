@@ -1,0 +1,6 @@
+FullProject\PageObject\ProductPage.class
+FullProject\PageObject\LoginPage.class
+FullProject\Abstract\AbstractClass.class
+FullProject\PageObject\ConfirmPage.class
+FullProject\PageObject\PaymentPage.class
+FullProject\properties\ExtentReporterNG.class

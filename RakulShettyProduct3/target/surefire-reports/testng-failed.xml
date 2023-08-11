@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="FullProject.TestClass.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="product Test(failed)" verbose="0">
+    <classes>
+      <class name="FullProject.TestClass.ProductPageTest">
+        <methods>
+          <include name="launchApp"/>
+          <include name="tearDown"/>
+          <include name="productselect" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- FullProject.TestClass.ProductPageTest -->
+    </classes>
+  </test> <!-- product Test(failed) -->
+  <test thread-count="5" parallel="tests" name="login Test(failed)" verbose="0">
+    <classes>
+      <class name="FullProject.TestClass.LoginPageTest">
+        <methods>
+          <include name="launchApp"/>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- FullProject.TestClass.LoginPageTest -->
+    </classes>
+  </test> <!-- login Test(failed) -->
+  <test thread-count="5" parallel="tests" name="full Test(failed)" verbose="0">
+    <classes>
+      <class name="FullProject.TestClass.FullprojectTest">
+        <methods>
+          <include name="launchApp"/>
+          <include name="tearDown"/>
+          <include name="fullproject"/>
+        </methods>
+      </class> <!-- FullProject.TestClass.FullprojectTest -->
+    </classes>
+  </test> <!-- full Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
